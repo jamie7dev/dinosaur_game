@@ -18,12 +18,12 @@ const dino = {
   draw(){
     ctx.fillStyle = "green";
     // ctx.fillRect(this.x, this.y, this.width, this.height);
-    ctx.drawImage(img2, this.x, this.y)
+    ctx.drawImage(img_mov, this.x, this.y)
   }
 }
 
-const img2 = new Image();
-img2.src = 'mov.png';
+const img_mov = new Image();
+img_mov.src = 'mov.png';
 
 
 //2.
@@ -38,12 +38,12 @@ class Cactus {
   draw(){
     ctx.fillStyle = "red";
     // ctx.fillRect(this.x, this.y, this.width, this.height); //네모 그리기
-    ctx.drawImage(img1, this.x, this.y)
+    ctx.drawImage(img_cactus, this.x, this.y)
   }
 }
 
-const img1 = new Image();
-img1.src = 'cactus.png';
+const img_cactus = new Image();
+img_cactus.src = 'cactus.png';
 
 let timer = 0;
 let cacti = [];  //장애물 여러 개 관리하기
